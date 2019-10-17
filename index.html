@@ -34,12 +34,12 @@
        var name = $("#name-input").val();
        var phone = $("#phone-input").val();
        var email = $("#email-input").val();
-       var comment = $("#comment-input").val();
+       var comm = $("#comment-input").val();
        var data = {
           name : name,
           phone : phone,
           email : email,
-          comment : comment
+          comm : comment
         };
  $.ajax({
          type: "POST",
@@ -176,6 +176,7 @@
       <input class="w3-input w3-section w3-border" type="text" placeholder="Email" id="Email-input">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Phone" id="Phone-input">
       <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" id="Comment-input">
+      <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
       <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;"> SEND MESSAGE
       </button>
     </form>
